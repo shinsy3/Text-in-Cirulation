@@ -20,3 +20,7 @@ $( function() {
  $( function() {
     $( ".drag" ).draggable();
   } );
+
+$('.bottom').before().click(function(){
+   $('.bottom').fadeOut('fast');
+});
