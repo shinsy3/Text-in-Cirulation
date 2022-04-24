@@ -1,7 +1,7 @@
 function toggle() {
   var box = document.getElementById("box");
   box.classList.toggle("active");
-}
+} 
 
 $('.textbox').marquee({
 	duration: 20000,
