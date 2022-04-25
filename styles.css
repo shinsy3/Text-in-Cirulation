@@ -137,6 +137,24 @@ canvas{
   font-size: 30px;
 }
 
+.kf6 {
+  background-color:rgb(252, 255, 104);
+  width:60px;
+  height:60px;
+  border-radius:20%;
+  /* position: absolute;
+  bottom:2%;
+  left:4%; */
+  display: inline;
+  pointer-events: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  /* margin-bottom:10px; */
+  font-size: 30px;
+}
+
 
 .kf:before {
   background-color: black;
@@ -273,6 +291,33 @@ canvas{
     margin-top:-900px;
 }
 
+.kf6:before {
+  background-color: black;
+  background-image: url('p7.jpg');
+  /* background-size:850px; */
+  background-size:900px;
+  background-repeat: no-repeat;
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  /* width:800px; */
+    width:850px;
+  /* height:510px; */
+  height:560px;
+  border-radius: 20px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:40px;
+  transition: opacity 1s ease-in-out;
+
+  position:absolute;
+  z-index: 1;
+  /* left:50px; */
+    left:450px;
+  /* margin-top:-660px; */
+    margin-top:-900px;
+}
+
 .kf:hover:before {
   opacity: 1;
   visibility: visible;
@@ -294,6 +339,11 @@ canvas{
 }
 
 .kf5:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.kf6:hover:before {
   opacity: 1;
   visibility: visible;
 }
