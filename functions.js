@@ -1,7 +1,7 @@
 function toggle() {
   var box = document.getElementById("box");
   box.classList.toggle("active");
-} 
+}
 
 $('.textbox').marquee({
 	duration: 20000,
@@ -17,10 +17,10 @@ $( function() {
    $( ".draggable" ).draggable();
  } );
 
- $( function() {
+$( function() {
     $( ".drag" ).draggable();
   } );
 
-$('.bottom').before().click(function(){
-   $('.bottom').fadeOut('fast');
-});
+$('.text').before().click(function(){
+    $('.text').fadeOut('fast');
+  });
