@@ -38,6 +38,32 @@ canvas{
   opacity: 1;
 } */
 
+
+.top {
+display: flex;
+justify-content: center;
+align-items: center;
+filter: url("#flyOn");
+animation: wavemover 10s infinite alternate linear;
+font-family: 'Rubik Mono One', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.6em;
+  /* max-width: 7ch; */
+  opacity: .6;
+  /* margin-left: 20%; */
+}
+
+@keyframes wavemover {
+  100% {
+    padding-left: 300px;
+    transform: translateX(-100px);
+  }
+}
+
+
 .keyboard {
   display: flex;
   flex-direction: row;
@@ -165,8 +191,8 @@ canvas{
 }
 
 
-.text{
-  width: 200px;
+/* .text{
+  width: 210px;
   height: 100px;
   border:1px solid;
   padding:10px;
@@ -183,8 +209,33 @@ canvas{
   position:absolute;
   top:-3px;
   left:0px;
+} */
+
+.text{
+  background-color: white;
+  width: 230px;
+  height: 110px;
+  /* border:1px solid; */
+  border-radius: 2rem;
+  padding:20px;
+  padding-top: 40px;
+  position:relative;
+  border: 1px solid #67c;
 }
 
+.text span{
+  /* background-color: rgb(246, 247, 166); */
+  color:red;
+  border:1px solid;
+  border-radius: .8rem;
+  display:block;
+  padding:3px 10px;
+  font-size:13px;
+
+  position:absolute;
+  top:6px;
+  right:15px;
+}
 
 .side {
   position: fixed;
